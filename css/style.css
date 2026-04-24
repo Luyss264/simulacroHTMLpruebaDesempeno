@@ -8,6 +8,7 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    color: aliceblue;
     flex-direction: column;
 }
 
@@ -36,6 +37,15 @@ header figure {
 
 header figure img{
     width: 100%;
+}
+
+main{
+    flex: 1;
+    width: 100%;
+}
+
+main .hero{
+    background: ;
 }
 
 
