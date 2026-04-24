@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --spantitle-color: rgb(255, 166, 0);
+}
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
     color: aliceblue;
     flex-direction: column;
+    background-color: rgb(4, 3, 71);
 }
 
 header{
@@ -27,7 +31,7 @@ header{
 }
 
 .title span{
-    color: darkorange;
+    color: var(--spantitle-color);
 }
 
 header figure {
@@ -42,11 +46,83 @@ header figure img{
 main{
     flex: 1;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 main .hero{
-    background: ;
+    background-image: url(../assets/images/51638731806_3c31389b9b_k-1-1024x683.jpg);
+    background-color: rgba(148, 39, 0, 0.562);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: grid;
+    place-items: center;
 }
+
+.hero div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero div h2 span{
+    color: var(--spantitle-color);
+    width: 100%;
+}
+
+.hero div a{
+    text-decoration: none;
+    color: black;
+    width: 140px;
+    height: 30px;
+    background-color: var(--spantitle-color);
+    display: grid;
+    place-content: center;
+    font-size: small;
+    border-radius: 3px;
+}
+
+.fechas, .sobre , .zonas{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.fechas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fechas table{
+    font-size: smaller;
+    border-collapse: collapse;
+    width: 85%;
+    height: auto;
+}
+
+.fechas table td{
+    border: 1px solid white;
+}
+.fechas table th{
+    background-color: var(--spantitle-color);
+    color: black;
+}
+
+
+
+
+
+
 
 
 
